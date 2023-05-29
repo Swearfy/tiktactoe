@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./reset.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form id="startmenu">
+        <div>Enter Names</div>
+        <div class="nameContainers">
+          <div>
+            <label for="player1Name">Player 1</label>
+            <input type="text" name="player1Name" id="player1Name" />
+            <!-- <label for="player1Sign">Player 1 Sign</label>
+          <input type="checkbox" name="player1Sign" id="" /> -->
+          </div>
+          <div>
+            <label for="player2Name">Player 2</label>
+            <input type="text" name="player2Name" id="player2Name" />
+            <!-- <label for="player2Sign">Player 2 Sign</label>
+          <input type="checkbox" name="player2Sign" id="" /> -->
+          </div>
+        </div>
+        <div>
+          <button id="startGame" type="submit">Start Game</button>
+        </div>
+      </form>
+      <div id="game" class="hide">
+        <div class="header">
+          <h1><span id="player1">Player 1 </span> sign: <span>O</span></h1>
+          <h1><span id="player2">Player 2 </span> sign: <span>X</span></h1>
+        </div>
+        <div id="GameBoard"></div>
+        <div>
+          <button id="restart-btn">Restart</button>
+          <button id="menu-btn">Menu</button>
+        </div>
+      </div>
+      <div id="overlay" class="hide"><div id="winContainer"></div></div>
+    </main>
+  </body>
+</html>

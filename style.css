@@ -1,0 +1,91 @@
+body {
+  background-color: grey;
+}
+
+.header {
+  display: flex;
+  gap: 50px;
+}
+
+#GameBoard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 2px solid black;
+}
+
+#GameBoard button {
+  text-align: center;
+  border: 1px solid black;
+  width: 15rem;
+  height: 15rem;
+  font-size: 8rem;
+  padding: 0;
+}
+
+#winContainer {
+  width: 30rem;
+  background-color: grey;
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#overlay {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#startmenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: xx-large;
+}
+
+.nameContainers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.nameContainers div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-transform: uppercase;
+}
+
+#game {
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  gap: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
